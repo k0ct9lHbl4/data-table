@@ -1,0 +1,38 @@
+.pagination {
+  width: 77.5%;
+  margin: 0 auto;
+
+  ul {
+    li {
+      display: inline-block;
+      user-select: none;
+
+      a {
+        display: inline-block;
+        color: #16b67f;
+        text-align: center;
+        line-height: 36px;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #16b67f;
+        border-radius: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #16b67f;
+          color: #fff;
+        }
+      }
+    }
+
+    :global {
+      .selected {
+        a {
+          background-color: #16b67f;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
